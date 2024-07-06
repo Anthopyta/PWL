@@ -30,9 +30,21 @@
     ?>
 
     <li class="nav-item">
+      <a class="nav-link <?php echo (uri_string() == 'profile') ? "" : "collapsed" ?>" href="profile">
+        <i class="bi bi-person"></i>
+        <span>Profile</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link <?php echo (uri_string() == 'faq') ? "" : "collapsed" ?>" href="faq">
+        <i class="bi bi-question-circle"></i>
+        <span>FAQ</span>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link <?php echo (uri_string() == 'kontak') ? "" : "collapsed" ?>" href="kontak">
         <i class="bi bi-telephone"></i>
-        <span>Kontak</span>
+        <span>Contact</span>
       </a>
     </li><!-- End Kontak Nav -->
   </ul>
