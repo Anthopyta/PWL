@@ -28,3 +28,9 @@ $routes->group('keranjang', ['filter' => 'auth'], function ($routes) {
 });
 
 $routes->get('kontak', 'KontakController::index', ['filter' => 'auth']);
+$routes->get('profile', 'HomeController::profile', ['filter' => 'auth']);
+
+$routes->get('checkout', 'TransaksiController::checkout', ['filter' => 'auth']);
+$routes->get('getcity', 'TransaksiController::getCity', ['filter' => 'auth']);
+$routes->get('getcost', 'TransaksiController::getCost', ['filter' => 'auth']);
+$routes->post('buy', 'TransaksiController::buy', ['filter' => 'auth']);
