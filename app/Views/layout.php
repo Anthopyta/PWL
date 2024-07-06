@@ -94,6 +94,8 @@ if (uri_string() != "") {
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="<?= base_url() ?>NiceAdmin/assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="<?= base_url() ?>NiceAdmin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -107,6 +109,8 @@ if (uri_string() != "") {
   <!-- Template Main JS File -->
   <script src="<?= base_url() ?>NiceAdmin/assets/js/main.js"></script>
 
+  <?= $this->renderSection('script') ?>
+  
 </body>
 
 </html>
